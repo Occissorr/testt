@@ -1,0 +1,25 @@
+{
+  "type": "typescript",
+  "path": "./src/components",
+  "withStyle": true,
+  "style": "scss",
+  "withTest": true,
+  "test": {
+    "extension": "tsx",
+    "framework": "react-testing-library"
+  },
+  "usesTypeScript": true,
+  "usesStyledComponents": false,
+  "usesCssModule": false,
+  "cssPreprocessor": "scss",
+  "testLibrary": "Testing Library",
+  "component": {
+    "default": {
+      "path": "src/components",
+      "withStyle": true,
+      "withTest": true,
+      "withStory": false,
+      "withLazy": false
+    }
+  }
+}
