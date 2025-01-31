@@ -1,0 +1,73 @@
+@import '../../constants-services/variables.scss';
+
+.sidebar {
+  position: fixed;
+  background-color: $sidebar-bg;
+  border: 1px solid $sidebar-border;
+  box-shadow: $sidebar-shadow;
+  z-index: 1000;
+  padding: $sidebar-padding;
+  transition: $sidebar-transition;
+  transform: translateX(-100%);
+  display: grid;
+
+  &.vertical {
+    width: 280px;
+    height: 100vh;
+    
+    .sideBarItems {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+      gap: 15px;
+      padding: 15px;
+      justify-items: center;
+    }
+  }
+
+  &.horizontal {
+    width: 100vw;
+    height: fit-content;
+    
+    .sideBarItems {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 5px 20px;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &.left {
+    left: 0;
+    top: 0;
+    transform: translateX(-100%);
+  }
+
+  &.right {
+    right: 0;
+    top: 0;
+    transform: translateX(100%);
+  }
+
+  &.top {
+    top: 0;
+    left: 0;
+    transform: translateY(-100%);
+  }
+
+  &.bottom {
+    bottom: 0;
+    left: 0;
+    transform: translateY(100%);
+  }
+
+  &.open {
+    transform: translate(0);
+    display: block;
+  }
+
+  &.closed {
+    display: none;
+  }
+}

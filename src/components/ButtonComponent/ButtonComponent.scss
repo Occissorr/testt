@@ -1,1 +1,23 @@
-.ButtonComponent {}
+@import '../../constants-services/variables.scss';
+
+.ButtonComponent {
+    border: none;
+    border-width: 1px;
+    cursor: pointer;
+    font-size: var(--fnt-1);
+    transition: background-color 0.3s ease;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+    &:hover {
+        background-color: $button-hover !important;
+    }
+
+    &:active {
+        background-color: $button-bg !important;
+    }
+
+    &:disabled {
+        background-color: $disabled !important;
+        cursor: not-allowed;
+    }
+}

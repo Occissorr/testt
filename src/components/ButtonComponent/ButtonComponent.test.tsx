@@ -5,7 +5,7 @@ import ButtonComponent from './ButtonComponent';
 
 describe('<ButtonComponent />', () => {
   test('it should mount', () => {
-    render(<ButtonComponent />);
+    render(<ButtonComponent text={''} />);
 
     const buttonComponent = screen.getByTestId('ButtonComponent');
 

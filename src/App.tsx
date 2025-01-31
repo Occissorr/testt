@@ -1,23 +1,16 @@
-import React, { useState } from 'react';
-import './App.css';
-import HomeComponent from './components/HomeComponent/HomeComponent';
-import { Iprops } from './assets/interface';
+import React from 'react';
+import './App';
+import HomePage from './components/HomePage/HomePage';
+import { ThemeProvider } from './contexts/ThemeContext';
 
-function App() {
-  const [appData, setAppData] = useState<Iprops>({
-    title: 'App Title', header: 'App Header', footer: 'App Footer',
-    body: 'App Body'
-  });
-
-  const handleClick = (args : Iprops) =>{
-    setAppData(args);
-  };
-
+const App: React.FC = () => {
   return (
     <div className="App">
-      <HomeComponent {...appData} click={handleClick} />
+      <ThemeProvider>
+        <HomePage/>
+      </ThemeProvider>
     </div>
   );
-}
+};
 
 export default App;

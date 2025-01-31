@@ -1,0 +1,43 @@
+$button-hover: var(--primary-color);
+$button-bg: var(--secondary-color);
+$disabled: var(--disabled);
+$border-radius: var(--border-radius);
+$padding: var(--padding);
+
+$sidebar-bg: var(--sidebar-bg);
+$sidebar-border: var(--sidebar-border);
+$sidebar-shadow: var(--sidebar-shadow);
+$sidebar-padding: var(--sidebar-padding);
+$sidebar-transition: var(--sidebar-transition);
+
+$sidebar-item-hover-bg: var(--sidebar-item-hover-bg);
+$sidebar-item-hover-shadow: var(--sidebar-item-hover-shadow);
+$sidebar-item-border: var(--sidebar-item-border);
+$sidebar-item-padding: var(--sidebar-item-padding);
+$sidebar-item-transition: var(--sidebar-item-transition);
+
+:root {
+    --primary-color: #f9b820;
+    --secondary-color: #fde769;
+    --disabled: #a4a081;
+    --border-radius: 8px;
+    --padding: 10px;
+    --fnt-1: 16px;
+    --fnt-2: 18px;
+    --fnt-3: 22px;
+    --fnt-bold: 200;
+}
+
+.sidebar {
+    --sidebar-bg: #ffffff;
+    --sidebar-border: #e0e0e0;
+    --sidebar-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    --sidebar-padding: 20px;
+    --sidebar-transition: transform 0.3s ease-in-out;
+
+    --sidebar-item-hover-bg: rgba(0, 0, 0, 0.04);
+    --sidebar-item-hover-shadow: 0 2px 8px rgb(249 184 32 / 54%);
+    --sidebar-item-border: #e0e0e0;
+    --sidebar-item-padding: 10px;
+    --sidebar-item-transition: all 0.2s ease;
+}
